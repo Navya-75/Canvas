@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🎨 Drawing Canvas App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🎨 Drawing Canvas (Pencil & Marker)</h1>
+  <div class="toolbar">
+    <label for="toolSelect">Tool:</label>
+    <select id="toolSelect">
+      <option value="pencil">Pencil</option>
+      <option value="marker">Marker</option>
+    </select>
+    <input type="color" id="colorPicker" value="#000000" />
+    <button onclick="clearCanvas()">Clear</button>
+  </div>
+  <canvas id="drawingCanvas" width="500" height="400"></canvas>
+  <script src="script.js"></script>
+</body>
+</html>
